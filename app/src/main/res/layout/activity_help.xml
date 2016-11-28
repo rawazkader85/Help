@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ca.uottawa.help.helpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:text="Welcome to Recipeek! This is the help page, where you'll find instructions on the various tools present in the app. Just press one of the links below to find what you're looking for!\n"
+                android:id="@+id/introductionText" />
+
+            <TextView
+                android:text="•Signing up to a Recipeek account.\n•Logging into your Recipeek account.\n•Searching for a recipe.\n•Favouriting a recipe\n•Making a recipe and uploading it online.\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#00bfff"
+                android:textSize="20dp"
+                android:layout_below="@+id/introductionText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/searchText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signUpText"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="•To sign up to a Recipeek account using email,"
+                android:layout_below="@+id/searchText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="press the &quot;Sign in&quot; button on the main page. From there, you'll find a button under the two text boxes. Press the &quot;Sign Up&quot; button, fill out the information required, and voila! You now have a Recipeek account! From there, you can create your own recipes and favourtie ones you find online.\n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:id="@+id/signUpDescriptionComplete"
+                android:layout_weight="0.43"
+                android:gravity="left"
+                android:layout_below="@+id/signUpText"
+                android:layout_alignLeft="@+id/signUpText"
+                android:layout_alignStart="@+id/signUpText" />
+
+            <TextView
+                android:text='•To Log in to your Recipeek account, press the "Sign in" button on the main page. From there, fill both information boxes required, then press the Sign in button on the bottom of the page. You will then be signed into your account.'
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/boldLoginScreen"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/signUpDescriptionComplete"
+                android:layout_alignStart="@+id/signUpDescriptionComplete" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
